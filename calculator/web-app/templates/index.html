@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'index.js' %}"></script>
+    </head>
+    <body>
+
+
+        <div id="ip">
+            <p type="text" id="ipi">0</p>
+        </div>
+        <div>
+            <table id="ipt">
+                <th class="but" onclick="insinp(1)">1</th>
+                <th class="but" onclick="insinp(2)">2</th>
+                <th class="but" onclick="insinp(3)">3</th>
+                <th class="but" onclick="insinp('+')">+</th>
+                <tbody></tbody>
+                <th class="but" onclick="insinp(4)">4</th>
+                <th class="but" onclick="insinp(5)">5</th>
+                <th class="but" onclick="insinp(6)">6</th>
+                <th class="but" onclick="insinp('-')">-</th>
+                <tbody></tbody>
+                <th class="but" onclick="insinp(7)">7</th>
+                <th class="but" onclick="insinp(8)">8</th>
+                <th class="but" onclick="insinp(9)">9</th>
+                <th class="but" onclick="insinp('*')">x</th>
+                <tbody></tbody>
+                <th class="but" onclick="insinp(0)">0</th>
+                <th class="but" onclick="cal()" style="padding-inline: 30px">=</th>
+                <th class="but" style="padding-inline: 25px;" onclick="ac()">AC</th>
+                <th class="but" onclick="insinp('/')" style="padding-inline: 30px;">/</th>
+                <tbody></tbody>
+            </table>
+        </div>
+    </body>
+</html>
